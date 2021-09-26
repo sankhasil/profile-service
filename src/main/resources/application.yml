@@ -1,3 +1,19 @@
 micronaut:
   application:
     name: profileService
+  server:
+    port: 8099
+    cors:
+       enabled: true
+       
+endpoints:
+  info:
+    enabled: Boolean
+    sensitive: Boolean
+  health:
+    enabled: Boolean
+    sensitive: Boolean
+    details-visible: String 
+    status:
+      http-mapping: Map<String, HttpStatus>  
+
